@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Empress Spade — Coming Soon</title>
+
+<style>
+:root {
+    --dark: #171133;
+    --bg: #FAF7F2;
+    --gold: #FFE77A;
+    --pink: #F5B2D4;
+    --plum: #8D637A;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    text-align: center;
+    position: relative;
+}
+
+.wrapper::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 240px;
+    height: 240px;
+    background: var(--pink);
+    opacity: 0.25;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -120px;
+    left: -120px;
+    width: 240px;
+    height: 240px;
+    background: var(--gold);
+    opacity: 0.25;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 0;
+    letter-spacing: 2px;
+    color: var(--dark);
+}
+
+header p {
+    margin-top: 8px;
+    font-style: italic;
+    color: var(--plum);
+}
+
+h2 {
+    font-size: 32px;
+    margin: 40px 0 0 0;
+    color: var(--dark);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 { font-size: 34px; }
+    h2 { font-size: 24px; }
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+    <header>
+        <h1>Empress Spade</h1>
+    </header>
+    <h2>Coming Soon</h2>
+</div>
+</body>
+</html>
