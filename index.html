@@ -5,15 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Empress Spade — Coming Soon</title>
 
-<!-- FontAwesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-dT9X/tNvl7cZ2b6+6Zf2KpLlF7kK3Zss2Fbk+GfFZo/ePQV6Gq3wD7Ho3nY13lw4aK0Yk9nN/7jkXJ3G7G90Hw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 <style>
 :root {
     --bg: #FFE77A;       /* yellow background */
     --text: #171133;     /* darkest color */
     --header: #8D637A;   /* plum for headers */
-    --pink: #F5B2D4;     /* circle background */
+    --pink: #F5B2D4;     /* button background */
 }
 
 body {
@@ -39,44 +36,39 @@ header img {
 
 h2 {
     font-size: 36px;
-    margin: 0 0 50px 0;
+    margin: 0 0 40px 0;
     color: var(--header);
 }
 
-/* Social icons container */
-.social-icons {
+/* Social buttons */
+.social-buttons {
     display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
 }
 
-.social-icons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background: var(--pink);
-    border-radius: 50%;
+.social-buttons a {
     text-decoration: none;
-    transition: transform 0.2s;
+    color: var(--text);
+    background: var(--pink);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.2s, background 0.2s;
 }
 
-.social-icons a i {
-    color: var(--text); /* make icons dark */
-    font-size: 24px;
-}
-
-.social-icons a:hover {
-    transform: scale(1.1);
+.social-buttons a:hover {
+    transform: scale(1.05);
+    background: #f0a8ca; /* slightly darker pink on hover */
 }
 
 /* Responsive */
 @media (max-width: 600px) {
     header img { max-width: 300px; }
     h2 { font-size: 28px; }
-    .social-icons a { width: 40px; height: 40px; }
-    .social-icons a i { font-size: 20px; }
+    .social-buttons a { padding: 8px 16px; font-size: 14px; }
 }
 </style>
 </head>
@@ -89,11 +81,11 @@ h2 {
 
 <h2>Coming Soon</h2>
 
-<div class="social-icons">
-    <a href="https://www.instagram.com/empressspade" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.youtube.com/@empressspade" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-    <a href="https://twitter.com/empressspade" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
-    <a href="https://www.facebook.com/Empress.Spade1" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+<div class="social-buttons">
+    <a href="https://www.instagram.com/empressspade" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/@empressspade" target="_blank">YouTube</a>
+    <a href="https://twitter.com/empressspade" target="_blank">X</a>
+    <a href="https://www.facebook.com/Empress.Spade1" target="_blank">Facebook</a>
 </div>
 
 </body>
